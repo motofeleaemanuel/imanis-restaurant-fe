@@ -1,0 +1,47 @@
+{
+    "HomePage": {
+        "title": "Salut lume!",
+        "about": "Mergi la pagina Despre"
+    },
+    "HeroSection": {
+        "callToReserveButton": "Sună pentru a rezerva",
+        "modal":{
+            "title": "Rezervă o masă",
+            "copyButton": "Copiază numărul",
+            "callNowButton": "Sună acum"
+        }
+    },
+    "PageLayout": {
+        "links": {
+            "docs": {
+                "description": "Află mai multe despre next-intl în documentația oficială.",
+                "href": "https://next-intl.dev",
+                "title": "Documentație"
+            },
+            "source": {
+                "description": "Răsfoiește codul sursă al acestui exemplu pe GitHub.",
+                "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router",
+                "title": "Cod sursă"
+            }
+        }
+    },
+    "NotFoundPage": {
+        "description": "Te rugăm să verifici bara de adrese a browserului sau să folosești navigarea pentru a ajunge la o pagină cunoscută.",
+        "title": "Pagina nu a fost găsită"
+    },
+    "MenuPage": {
+        "title": "Meniul nostru",
+        "dishesTab": "Preparatele noastre",
+        "drinksTab": "Băuturi",
+        "dessertsTab": "Deserturi",
+        "description": "Explorează ofertele noastre delicioase"
+    },
+    "Navigation": {
+        "home": "Acasă",
+        "menu": "Meniu",
+        "about": "Despre",
+        "contact": "Contact",
+        "reserve": "Rezervă o masă",
+        "gallery": "Galerie"
+    }
+}

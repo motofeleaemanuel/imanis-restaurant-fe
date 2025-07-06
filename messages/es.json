@@ -1,0 +1,47 @@
+{
+    "HomePage":{
+        "title": "¡Hola mundo!",
+        "about": "Ir a la página de información"
+    },
+    "HeroSection":{
+        "callToReserveButton": "Reservar por teléfono",
+        "modal":{
+            "title": "Reservar por teléfono",
+            "copyButton": "Copiar número",
+            "callNowButton": "Llamar ahora"
+        }
+    },
+    "PageLayout":{
+        "links":{
+            "docs":{
+                "description": "Aprende más sobre next-intl en la documentación oficial.",
+                "href": "https://next-intl.dev",
+                "title": "Documentación"
+            },
+            "source":{
+                "description": "Explora el código fuente de este ejemplo en GitHub.",
+                "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router",
+                "title": "Código fuente"
+            }
+        }
+    },
+    "NotFoundPage":{
+        "description": "Por favor, verifica la barra de direcciones del navegador o utiliza la navegación para ir a una página conocida.",
+        "title": "Página no encontrada"
+    },
+    "MenuPage":{
+        "title": "Nuestra Menú",
+        "dishesTab": "Platos",
+        "drinksTab": "Bebidas",
+        "dessertsTab": "Postres",
+        "description": "Explora nuestras deliciosas ofertas"
+    },
+    "Navigation":{
+        "home": "Inicio",
+        "menu": "Menú",
+        "about": "Acerca de",
+        "contact": "Contacto",
+        "gallery": "Galería",
+        "reserve": "Reservar una mesa"
+    }
+}
