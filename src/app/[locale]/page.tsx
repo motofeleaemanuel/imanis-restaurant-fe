@@ -1,7 +1,7 @@
 // app/(locale)/page.tsx
 import React from 'react';
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+// import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import TestimonialCarousel from '@/components/Testimonial';
 import { Revealer } from '@/components/Revealer';
@@ -9,7 +9,7 @@ import Hero from '@/components/Hero';
 
 
 export default function HomePage() {
-  const t = useTranslations('HomePage');
+  // const t = useTranslations('HomePage');
 
   const popularDishes = [
     { src: '/images/dish1.webp', alt: 'Espresso Delight', name: 'Espresso Delight', desc: 'Rich, bold espresso shot to kickstart your day.', price: '€2.50' },
