@@ -1,9 +1,10 @@
+
 @import "tailwindcss";
 @import 'leaflet/dist/leaflet.css';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
   --primary: #d66831;
   --secondary: #244c0f;
 }
@@ -27,7 +28,7 @@
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background, #0a0a0a);
   color: var(--foreground);
   font-family: var(--font-libre-baskerville);
 }
