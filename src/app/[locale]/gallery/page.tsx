@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import useSWR from 'swr';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Loader2 } from 'lucide-react';
 
 // Define the data type returned by the API
 export type GalleryItem = {
@@ -25,7 +26,7 @@ export default function GalleryPage() {
 
   if (error) {
     return (
-      <main className="flex items-center justify-center h-screen">
+      <main className="bg-[url('/images/soft-wallpaper.png')] flex items-center justify-center h-screen">
         <p className="text-red-500">Error loading gallery: {error.message}</p>
       </main>
     );
@@ -33,8 +34,8 @@ export default function GalleryPage() {
 
   if (!data) {
     return (
-      <main className="flex items-center justify-center h-screen">
-        <p className="text-gray-300">Loading gallery...</p>
+      <main className="bg-[url('/images/soft-wallpaper.png')] flex items-center justify-center h-screen">
+        <Loader2 className="animate-spin h-14 w-14 text-primary" />
       </main>
     );
   }

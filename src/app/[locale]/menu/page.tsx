@@ -40,10 +40,14 @@ export default function MenuPage({ params }: MenuPageProps) {
 
   const [tab, setTab] = useState<'Dishes' | 'Desserts' | 'Drinks'>('Dishes');
 
-  if (error) return <p className="text-red-500 p-4">{t('error')}</p>;
+  if (error) return (
+    <div className="bg-[url('/images/soft-wallpaper.png')] flex justify-center items-center py-16 h-screen">
+      <p className="text-red-500 p-4">{t('error')}</p>
+    </div>
+  );
   if (!data) {
     return (
-      <div className="flex justify-center items-center py-16 h-screen">
+      <div className="bg-[url('/images/soft-wallpaper.png')] flex justify-center items-center py-16 h-screen">
         <Loader2 className="animate-spin h-14 w-14 text-primary" />
       </div>
     );
