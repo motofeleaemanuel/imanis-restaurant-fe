@@ -5,7 +5,7 @@
     },
     "HeroSection":{
         "title": "Bienvenido a la Cafetería Imanis",
-        "subtitle": "Disfruta de café recién hecho, pasteles, platos cuidadosamente seleccionados y un ambiente cálido y acogedor todos los días. Ya sea que tengas antojo de un desayuno abundante, un almuerzo ligero o un tentempié por la tarde, nuestro menú está diseñado para deleitar tus sentidos. Ingredientes locales y especialidades caseras aseguran que cada bocado sea memorable.",
+        "subtitle": "Disfruta de café recién hecho, pasteles, platos cuidadosamente seleccionados y un ambiente cálido y acogedor todos los días. Ya sea que tengas antojo de un desayuno abundante, un almuerzo ligero o un tentempié por la tarde, nuestro menú está diseñado para deleitar tus sentidos.",
         "callToReserveButton": "Reservar por teléfono",
         "modal":{
             "title": "Reservar por teléfono",

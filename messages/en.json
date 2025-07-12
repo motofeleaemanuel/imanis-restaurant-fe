@@ -5,7 +5,7 @@
   },
   "HeroSection":{
     "title": "Welcome to Imanis Cafeteria",
-    "subtitle":"Enjoy freshly brewed coffee, pastries, well chosen dishes, and a warm, inviting atmosphere every day. Whether you’re craving a hearty breakfast, a light lunch, or an afternoon pick‑me‑up, our menu is crafted to delight your senses. Locally sourced ingredients and house‑made specialties ensure every bite is memorable.",
+    "subtitle":"Enjoy freshly brewed coffee, pastries, well chosen dishes, and a warm, inviting atmosphere every day. Whether you’re craving a hearty breakfast, a light lunch, or an afternoon pick‑me‑up, our menu is crafted to delight your senses.",
     "callToReserveButton": "Call to reserve",
     "modal":{
       "title": "Reserve a table",
