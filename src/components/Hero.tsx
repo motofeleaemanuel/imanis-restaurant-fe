@@ -17,7 +17,7 @@ export default function Hero() {
   };
 
   return (
-    <header className="relative w-full h-screen">
+    <header className="relative w-full h-screen [@media(max-height:786px)]:h-[calc(100vh+3rem)]">
       <Image
         src="/images/restaurant.webp"
         alt="Restaurant interior"
