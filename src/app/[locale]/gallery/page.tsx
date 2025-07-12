@@ -19,7 +19,7 @@ const fetcher = (url: string) => fetch(url).then(res => {
 });
 
 export default function GalleryPage() {
-  const { data, error } = useSWR<GalleryItem[]>('https://imanis-restaurant-fe.vercel.app/api/v1/gallery', fetcher, {
+  const { data, error } = useSWR<GalleryItem[]>('https://imanis-restaurant-be.onrender.com/api/v1/gallery', fetcher, {
     revalidateOnFocus: false,
   });
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);

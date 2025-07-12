@@ -34,7 +34,7 @@ export default function MenuPage({ params }: MenuPageProps) {
   const { locale } = use(params);
 
   const { data, error } = useSWR<{ dishes: MenuItemRaw[]; drinks: MenuItemRaw[] }>(
-    'https://imanis-restaurant-fe.vercel.app/api/v1/menu',
+    'https://imanis-restaurant-be.onrender.com/api/v1/menu',
     fetcher
   );
 
