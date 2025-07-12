@@ -4,6 +4,8 @@
         "about": "Ir a la página de información"
     },
     "HeroSection":{
+        "title": "Bienvenido a la Cafetería Imanis",
+        "subtitle": "Disfruta de café recién hecho, pasteles, platos cuidadosamente seleccionados y un ambiente cálido y acogedor todos los días. Ya sea que tengas antojo de un desayuno abundante, un almuerzo ligero o un tentempié por la tarde, nuestro menú está diseñado para deleitar tus sentidos. Ingredientes locales y especialidades caseras aseguran que cada bocado sea memorable.",
         "callToReserveButton": "Reservar por teléfono",
         "modal":{
             "title": "Reservar por teléfono",
@@ -11,6 +13,104 @@
             "callNowButton": "Llamar ahora"
         }
     },
+    "AboutUsSection": {
+        "title": "Sobre nosotros",
+        "description": "La Cafetería Imanis es un lugar acogedor, situado en Calpe, España, a dos pasos del mar, donde servimos café delicioso, productos de pastelería y comidas preparadas con amor. Nuestro equipo está dedicado a ofrecerte una experiencia cálida y acogedora cada vez que nos visitas."
+    
+    },
+    "PopularDishesSection": {
+        "title": "Platos populares",
+        "description": "Descubre las selecciones del chef, elaboradas con ingredientes de temporada y servidas frescas a diario.",
+        "menuButton": "Ver menú",
+        "popularDish1": {
+            "name": "Desayuno Inglés",
+            "desc": "Huevo frito, pan, salchicha de tocino, tomate cherry y frijoles",
+            "price": "€10.90"
+        },
+        "popularDish2": {
+            "name": "Macarrones a la Boloñesa",
+            "desc": "Clásico plato de pasta italiana con rica salsa de carne.",
+            "price": "€11.90"
+        },
+        "popularDish3": {
+            "name": "Ensalada Campestre",
+            "desc": "Rúcula fresca mezclada con rábanos, pepinos, tomates cherry, queso feta y huevos duros.",
+            "price": "€14.50"
+        },
+        "popularDish4": {
+            "name": "Salmón con verdura a la plancha",
+            "desc": "Salmón a la plancha servido con verduras de temporada.",
+            "price": "€18.90"
+        }
+    },
+     "TestimonialsSection": {
+    "title": "Lo que dicen nuestros clientes",
+    "description": "Opiniones reales de los clientes que aman nuestra cafetería.",
+    "testimonial1": {
+      "quote": "¡El mejor café de la ciudad: ambiente acogedor y personal amable!",
+      "author": "— María G.",
+      "rating": 5
+    },
+    "testimonial2": {
+      "quote": "La tostada de aguacate es una revelación. ¡No puedo esperar para volver!",
+      "author": "— Carlos R.",
+      "rating": 4
+    },
+    "testimonial3": {
+      "quote": "¡Pasteles increíbles y tantas opciones veganas!",
+      "author": "— Lucia M.",
+      "rating": 5
+    },
+    "testimonial4": {
+      "quote": "El lugar perfecto para un brunch de domingo tranquilo con amigos.",
+      "author": "— Javier L.",
+      "rating": 5
+    },
+    "testimonial5": {
+      "quote": "El personal es tan acogedor, se siente como en casa.",
+      "author": "— Ana S.",
+      "rating": 4
+    },
+    "testimonial6": {
+      "quote": "¡Sus especialidades de temporada siempre son un deleite!",
+      "author": "— Diego P.",
+      "rating": 5
+    },
+    "testimonial7": {
+      "quote": "Me encanta la atmósfera aquí, perfecta para trabajar o relajarse.",
+      "author": "— Elena T.",
+      "rating": 4
+    },
+    "testimonial8": {
+      "quote": "¡El arte en el café es casi demasiado hermoso para beber!",
+      "author": "— Sofia B.",
+      "rating": 5
+    }
+  },
+    "GallerySection": {
+        "title": "Galería",
+        "description": "Echa un vistazo a nuestro acogedor espacio y deliciosos platos.",
+        "viewGalleryButton": "Ver galería"
+    },
+    "FooterSection": {
+    "section1": {
+      "title": "Cafetería Imanis",
+      "description": "Un lugar acogedor que sirve café artesanal, pasteles frescos y delicias caseras. Únete a nosotros para una experiencia relajante.",
+      "instagramLink": "Imanis Cafetería"
+    },
+    "section2": {
+      "title": "Contáctanos",
+      "address": "Av. Rosa de los Vientos, 4, 03710 Calp, Alicante"
+    },
+    "section3": {
+      "title": "Horario de Apertura",
+      "workingDays": "Lun, Mar, Jue, Vie - 9:30 AM - 11:00 PM",
+      "weekend": "Sáb - Dom - 9:30 AM - 11:00 PM",
+      "dayOff": "Miércoles - Cerrado"
+    },
+      "rightsReserved": "Cafetería Imanis. Todos los derechos reservados."
+
+  },
     "PageLayout":{
         "links":{
             "docs":{

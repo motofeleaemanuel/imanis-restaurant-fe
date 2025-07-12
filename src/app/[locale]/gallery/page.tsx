@@ -19,7 +19,7 @@ const fetcher = (url: string) => fetch(url).then(res => {
 });
 
 export default function GalleryPage() {
-  const { data, error } = useSWR<GalleryItem[]>('https://imanis-restaurant-be.onrender.com/api/v1/gallery', fetcher, {
+  const { data, error } = useSWR<GalleryItem[]>('https://imanis-restaurant-fe.vercel.app/api/v1/gallery', fetcher, {
     revalidateOnFocus: false,
   });
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
@@ -62,7 +62,7 @@ export default function GalleryPage() {
                   loading="lazy"
                 />
               </div>
-              <h3 className="mt-2 text-2xl font-bold text-primary">{item.description}</h3>
+              {/* <h3 className="mt-2 text-2xl font-bold text-primary">{item.description}</h3> */}
             </div>
           ))}
         </div>
@@ -114,7 +114,7 @@ export default function GalleryPage() {
                   sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                         className="rounded-2xl"
                       />
-                      <p className="mt-4 text-center text-gray-200 text-lg">{item.description}</p>
+                      {/* <p className="mt-4 text-center text-gray-200 text-lg">{item.description}</p> */}
                     </div>
                   ))}
                 </motion.div>

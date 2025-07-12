@@ -6,25 +6,28 @@ import { Link } from '@/i18n/navigation';
 import TestimonialCarousel from '@/components/Testimonial';
 import { Revealer } from '@/components/Revealer';
 import Hero from '@/components/Hero';
+import { useTranslations } from 'next-intl';
 
 
 export default function HomePage() {
-  // const t = useTranslations('HomePage');
+  const tAboutUs = useTranslations('AboutUsSection');
+  const tPopularDishes = useTranslations('PopularDishesSection');
+  const tGallery = useTranslations('GallerySection');
 
   const popularDishes = [
-    { src: '/images/dish1.webp', alt: 'Espresso Delight', name: 'Espresso Delight', desc: 'Rich, bold espresso shot to kickstart your day.', price: '€2.50' },
-    { src: '/images/dish2.webp', alt: 'Avocado Toast', name: 'Avocado Toast', desc: 'Smashed avocado on crusty sourdough, topped with chili flakes.', price: '€6.00' },
-    { src: '/images/dish3.webp', alt: 'Berry Pancakes', name: 'Berry Pancakes', desc: 'Fluffy pancakes loaded with fresh berries and maple syrup.', price: '€8.00' },
-    { src: '/images/dish4.webp', alt: 'Classic Latte', name: 'Classic Latte', desc: 'Smooth latte with a perfect layer of foam.', price: '€4.00' }
+    { src: '/images/dish1.webp', alt: 'English Breakfast', name: 'English Breakfast', desc: 'Fried egg, bread, bacon sausage, cherry tomato and beans', price: '€10.90' },
+    { src: '/images/dish2.webp', alt: 'Macaroni Bolognese', name: 'Macaroni Bolognese', desc: 'Classic Italian pasta dish with rich meat sauce.', price: '€11.90' },
+    { src: '/images/dish3.webp', alt: 'Country salad', name: 'Country salad', desc: 'Fresh rucola mixed with radishes, cucumbers, cherry tomatoes, feta cheese and boiled eggs.', price: '€14.50' },
+    { src: '/images/dish4.webp', alt: 'Salmon with grilled vegetables', name: 'Salmon with grilled vegetables', desc: 'Grilled salmon served with seasonal vegetables.', price: '€18.90' }
   ];
 
   const galleryImages = [
     '/images/restaurant1.webp',
-    '/images/restaurant2.jpg',
+    '/images/restaurant2.webp',
     '/images/restaurant3.webp',
+    '/images/dish5.webp',
     '/images/restaurant.webp',
-    '/images/restaurant2.jpg',
-    '/images/restaurant1.webp'
+    '/images/dish6.webp'
   ];
 
 
@@ -43,7 +46,7 @@ export default function HomePage() {
               {/* Image Card */}
               <div className="overflow-hidden rounded-2xl shadow-2xl">
                 <Image
-                  src="/images/restaurant.webp"
+                  src="/images/restaurant2.webp"
                   alt="Interior of Imanis Cafeteria"
                   width={800}
                   height={500}
@@ -55,13 +58,10 @@ export default function HomePage() {
               {/* Text Content */}
               <div className="space-y-8">
                  <h2 className="text-5xl font-bold text-black leading-tight">
-            About Us
+            {tAboutUs('title')}
           </h2>
           <p className="text-lg text-gray-600">
-            Since opening our doors in <time dateTime="2023">2023</time>, Imanis Cafeteria has become a beloved gathering spot in <strong className="text-black">Calp, Spain</strong>. Nestled between sun-kissed beaches and charming streets, we blend a chic Mediterranean vibe with warm hospitality.
-          </p>
-          <p className="text-lg text-gray-600">
-            Savor our signature <em className="text-black">Espresso Delight</em> or explore our seasonal specialties, all handcrafted by skilled baristas and bakers using the finest local ingredients for an authentic Spanish taste.
+            {tAboutUs('description')}
           </p>
               </div>
             </div>
@@ -72,9 +72,9 @@ export default function HomePage() {
  <div className="absolute -bottom-16 -left-16 w-72 h-72 bg-primary/30 rounded-full filter blur-3xl"></div>
             <div className="absolute -top-16 -right-16 w-96 h-96 bg-primary/20 rounded-full filter blur-2xl"></div>
   <div className="relative z-10 max-w-7xl mx-auto">
-    <h2 className="text-4xl font-bold text-center mb-2 text-gray-50">Popular Dishes</h2>
+    <h2 className="text-4xl font-bold text-center mb-2 text-gray-50">{tPopularDishes('title')}</h2>
     <p className="text-center text-gray-100 mb-4">
-      Discover our chef’s top picks, crafted with seasonal ingredients and served fresh daily.
+      {tPopularDishes('description')}
     </p>
 
     {/* See Menu Link above grid */}
@@ -83,7 +83,7 @@ export default function HomePage() {
         href="/menu"
         className="inline-flex items-center text-primary font-semibold hover:text-primary transition"
       >
-        See Menu
+        {tPopularDishes('menuButton')}
         <svg
           className="w-5 h-5 ml-2"
           fill="none"
@@ -102,7 +102,7 @@ export default function HomePage() {
 
     {/* Dishes Grid */}
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-      {popularDishes.map((dish) => (
+      {popularDishes.map((dish, index) => (
         <div
           key={dish.name}
           className="bg-[#222]/70 backdrop-blur-sm rounded-xl p-6 text-center shadow-primary hover:shadow-sm transition"
@@ -116,9 +116,9 @@ export default function HomePage() {
             loading='lazy'
             className="w-full h-48 object-cover rounded-lg mb-4"
           />
-          <h3 className="text-xl font-semibold mb-2 text-gray-50">{dish.name}</h3>
-          <p className="text-sm text-gray-300 mb-2">{dish.desc}</p>
-          <span className="text-lg font-bold text-primary">{dish.price}</span>
+          <h3 className="text-xl font-semibold mb-2 text-gray-50">{tPopularDishes(`popularDish${index + 1}.name`)}</h3>
+          <p className="text-sm text-gray-300 mb-2">{tPopularDishes(`popularDish${index + 1}.desc`)}</p>
+          <span className="text-lg font-bold text-primary">{tPopularDishes(`popularDish${index + 1}.price`)}</span>
         </div>
       ))}
     </div>
@@ -137,14 +137,14 @@ export default function HomePage() {
           {/* Gallery Section */}
           <section id="gallery" className="py-16 px-4">
             <div className="max-w-7xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-4 text-gray-50">Gallery</h2>
-              <p className="text-center text-gray-50 mb-8">A glimpse into our cozy interior and mouthwatering dishes.</p>
+              <h2 className="text-4xl font-bold text-center mb-4 text-gray-50">{tGallery('title')}</h2>
+              <p className="text-center text-gray-50 mb-8">{tGallery('description')}</p>
               <div className='w-full flex justify-end mb-2'>
                 <Link
                   href="/gallery"
                   className="inline-flex items-center text-primary font-semibold hover:text-primary-dark transition"
                 >
-                  See Gallery
+                  {tGallery('viewGalleryButton')}
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>

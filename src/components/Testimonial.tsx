@@ -5,6 +5,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
+import { useTranslations } from 'next-intl';
 
 interface Testimonial {
   quote: string;
@@ -42,9 +43,10 @@ function renderStars(count: number) {
 }
 
 export default function TestimonialCarousel() {
+  const t = useTranslations('TestimonialsSection');
   return (
     <div className="bg-gray-50">
-      <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">What Our Guests Say</h2>
+      <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">{t('title')}</h2>
       <Swiper
         modules={[Autoplay]}
         loop={true}
@@ -59,12 +61,12 @@ export default function TestimonialCarousel() {
         }}
         style={{ paddingBottom: '2rem' }}
       >
-        {testimonials.map((t, i) => (
+        {testimonials.map((testimonial, i) => (
           <SwiperSlide key={i}>
             <blockquote className="h-full p-6 bg-white rounded-lg shadow-lg flex flex-col justify-between">
-              {renderStars(t.rating)}
-              <p className="text-lg italic text-gray-800 mb-4">&ldquo;{t.quote}&rdquo;</p>
-              <footer className="mt-4 font-semibold text-right text-gray-400">{t.author}</footer>
+              {renderStars(testimonial.rating)}
+              <p className="text-lg italic text-gray-800 mb-4">&ldquo;{t('testimonial' + (i + 1) + '.quote')}&rdquo;</p>
+              <footer className="mt-4 font-semibold text-right text-gray-400">{t('testimonial' + (i + 1) + '.author')}</footer>
             </blockquote>
           </SwiperSlide>
         ))}

@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <header className="relative w-full h-screen">
       <Image
-        src="/images/restaurant2.jpg"
+        src="/images/restaurant.webp"
         alt="Restaurant interior"
         fill
         className="object-cover"
@@ -28,14 +28,10 @@ export default function Hero() {
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
         <h1 className="text-5xl sm:text-3xl md:3xl font-bold text-white mb-4">
-          Welcome to Imanis Cafeteria
+          {t('title')}
         </h1>
         <p className="text-lg text-white mb-6 max-w-7xl">
-          Enjoy freshly brewed coffee, artisanal pastries, and a warm,
-          inviting atmosphere every day. Whether you’re craving a hearty
-          breakfast, a light lunch, or an afternoon pick‑me‑up, our menu
-          is crafted to delight your senses. Locally sourced ingredients
-          and house‑made specialties ensure every bite is memorable.
+          {t('subtitle')}
         </p>
 
         <button

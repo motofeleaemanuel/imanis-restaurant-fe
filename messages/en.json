@@ -4,12 +4,111 @@
     "about": "Go to the about page"
   },
   "HeroSection":{
+    "title": "Welcome to Imanis Cafeteria",
+    "subtitle":"Enjoy freshly brewed coffee, pastries, well chosen dishes, and a warm, inviting atmosphere every day. Whether you’re craving a hearty breakfast, a light lunch, or an afternoon pick‑me‑up, our menu is crafted to delight your senses. Locally sourced ingredients and house‑made specialties ensure every bite is memorable.",
     "callToReserveButton": "Call to reserve",
     "modal":{
       "title": "Reserve a table",
       "copyButton": "Copy number",
       "callNowButton": "Call now"
     }
+  },
+  "AboutUsSection": {
+    "title": "About Us",
+    "description": "Imanis Cafeteria is a welcoming place located in Calpe, Spain, just steps from the sea, where we serve delicious coffee, pastries, and meals prepared with love. Our team is dedicated to providing you with a warm and inviting experience every time you visit."
+  },
+  "PopularDishesSection": {
+    "title": "Popular Dishes",
+    "description": "Discover our chef’s top picks, crafted with seasonal ingredients and served fresh daily.",
+    "menuButton": "See Menu",
+    "popularDish1": {
+      "name": "English Breakfast",
+      "desc": "Fried egg, bread, bacon sausage, cherry tomato and beans",
+      "price": "€10.90"
+    },
+    "popularDish2": {
+      "name": "Macaroni Bolognese",
+      "desc": "Classic Italian pasta dish with rich meat sauce.",
+      "price": "€11.90"
+    },
+    "popularDish3": {
+      "name": "Country Salad",
+      "desc": "Fresh rucola mixed with radishes, cucumbers, cherry tomatoes, feta cheese and boiled eggs.",
+      "price": "€14.50"
+    },
+    "popularDish4": {
+      "name": "Salmon with Grilled Vegetables",
+      "desc": "Grilled salmon served with seasonal vegetables.",
+      "price": "€18.90"
+    }
+  },
+  "TestimonialsSection": {
+    "title": "What Our Guests Say",
+    "description": "Real feedback from guests who love our café.",
+    "testimonial1": {
+      "quote": "Best coffee in town—cozy vibe and friendly staff!",
+      "author": "— María G.",
+      "rating": 5
+    },
+    "testimonial2": {
+      "quote": "The avocado toast is a revelation. Can’t wait to come back!",
+      "author": "— Carlos R.",
+      "rating": 4
+    },
+    "testimonial3": {
+      "quote": "Amazing pastries and so many vegan options!",
+      "author": "— Lucia M.",
+      "rating": 5
+    },
+    "testimonial4": {
+      "quote": "Perfect spot for a lazy Sunday brunch with friends.",
+      "author": "— Javier L.",
+      "rating": 5
+    },
+    "testimonial5": {
+      "quote": "The staff is so welcoming, it feels like home.",
+      "author": "— Ana S.",
+      "rating": 4
+    },
+    "testimonial6": {
+      "quote": "Their seasonal specials are always a treat!",
+      "author": "— Diego P.",
+      "rating": 5
+    },
+    "testimonial7": {
+      "quote": "I love the atmosphere here, perfect for working or relaxing.",
+      "author": "— Elena T.",
+      "rating": 4
+    },
+    "testimonial8": {
+      "quote": "The coffee art is almost too beautiful to drink!",
+      "author": "— Sofia B.",
+      "rating": 5
+    }
+  },
+  "GallerySection": {
+    "title": "Gallery",
+    "description": "Explore our cozy atmosphere and delicious offerings through our gallery.",
+    "viewGalleryButton": "View More"
+  },
+  "FooterSection": {
+    "section1":{
+      "title":"Imanis Cafeteria",
+      "description":"A cozy spot serving artisanal coffee, fresh pastries, and homemade treats. Join us for a relaxing experience.",
+      "instagramLink": "Imanis Cafeteria"
+    },
+    "section2":{
+      "title": "Contact Us",
+      "address": "Av. Rosa de los Vientos, 4, 03710 Calp, Alicante"
+    },
+    "section3":{
+      "title": "Opening Hours",
+      "workingDays": "Mon, Tue, Thur, Fri - 9:30 AM - 23:00 PM",
+      "weekend": "Sat - Sun - 9:30 AM - 23:00 PM",
+      "dayOff": "Wednesday - Closed"
+    },
+      "rightsReserved": "Imanis Cafeteria. All rights reserved."
+
   },
   "PageLayout": {
     "links": {

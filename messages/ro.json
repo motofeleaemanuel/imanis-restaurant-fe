@@ -4,6 +4,8 @@
         "about": "Mergi la pagina Despre"
     },
     "HeroSection": {
+        "title": "Bine ai venit la Cafeneaua Imanis",
+        "subtitle": "Bucură-te de cafea proaspăt preparată, produse de patiserie, mâncăruri alese și o atmosferă caldă și primitoare în fiecare zi. Fie că ai poftă de un mic dejun copios, un prânz ușor sau o gustare de după-amiază, meniul nostru este conceput pentru a-ți încânta simțurile. Ingredientele provenite din surse locale și specialitățile preparate în casă asigură că fiecare mușcătură este memorabilă.",
         "callToReserveButton": "Sună pentru a rezerva",
         "modal":{
             "title": "Rezervă o masă",
@@ -11,6 +13,103 @@
             "callNowButton": "Sună acum"
         }
     },
+    "AboutUsSection": {
+        "title": "Despre noi",
+        "description": "Cafeneaua Imanis este un loc primitor, situat in Calpe, Spania, la doi pași de mare, unde servim cafea delicioasă, produse de patiserie și mese preparate cu dragoste. Echipa noastră este dedicată să îți ofere o experiență caldă și primitoare de fiecare dată când ne vizitezi."
+    },
+    "PopularDishesSection": {
+        "title": "Preparatele noastre populare",
+        "description": "Descoperă selecțiile preferate ale bucătarului, preparate cu ingrediente de sezon și servite proaspete în fiecare zi.",
+        "menuButton": "Vezi Meniul",
+        "popularDish1": {
+            "name": "Mic dejun englezesc",
+            "desc": "Ou prăjit, pâine, cârnați de bacon, roșii cherry și fasole",
+            "price": "€10.90"
+        },
+        "popularDish2": {
+            "name": "Macaroni Bolognese",
+            "desc": "Clasicul preparat italian de paste cu sos bogat de carne.",
+            "price": "€11.90"
+        },
+        "popularDish3": {
+            "name": "Salată de țară",
+            "desc": "Rucola proaspătă amestecată cu ridichi, castraveți, roșii cherry, brânză feta și ouă fierte.",
+            "price": "€14.50"
+        },
+        "popularDish4": {
+            "name": "Somon cu legume la grătar",
+            "desc": "Somon la grătar servit cu legume.",
+            "price": "€18.90"
+        }
+    },
+    "TestimonialsSection": {
+    "title": "Ce spun oaspeții noștri",
+    "description": "Păreri autentice de la cei care iubesc cafeneaua noastră.",
+    "testimonial1": {
+      "quote": "Cea mai bună cafea din oraș – atmosferă primitoare și personal prietenos!",
+      "author": "— María G.",
+      "rating": 5
+    },
+    "testimonial2": {
+      "quote": "Toast-ul cu avocado este o revelație. Abia aștept să mă întorc!",
+      "author": "— Carlos R.",
+      "rating": 4
+    },
+    "testimonial3": {
+      "quote": "Patiserie uimitoare și atât de multe opțiuni vegane!",
+      "author": "— Lucia M.",
+      "rating": 5
+    },
+    "testimonial4": {
+      "quote": "Locul perfect pentru un brunch leneș de duminică cu prietenii.",
+      "author": "— Javier L.",
+      "rating": 5
+    },
+    "testimonial5": {
+      "quote": "Personalul este atât de primitor, te simți ca acasă.",
+      "author": "— Ana S.",
+      "rating": 4
+    },
+    "testimonial6": {
+      "quote": "Specialitățile lor de sezon sunt întotdeauna o încântare!",
+      "author": "— Diego P.",
+      "rating": 5
+    },
+    "testimonial7": {
+      "quote": "Îmi place atmosfera de aici, perfectă pentru a munci sau a te relaxa.",
+      "author": "— Elena T.",
+      "rating": 4
+    },
+    "testimonial8": {
+      "quote": "Arta în cafea este aproape prea frumoasă pentru a fi băută!",
+      "author": "— Sofia B.",
+      "rating": 5
+    }
+  },
+    "GallerySection": {
+        "title": "Galerie",
+        "description": "Aruncă o privire asupra spațiului nostru primitor și a preparatelor delicioase.",
+        "viewGalleryButton": "Vezi galeria"
+    },
+    "FooterSection": {
+    "section1": {
+      "title": "Cafeneaua Imanis",
+      "description": "Un loc primitor unde servim cafea artizanală, produse de patiserie proaspete și bunătăți de casă. Vino să te relaxezi alături de noi.",
+      "instagramLink": "Cafeneaua Imanis"
+    },
+    "section2": {
+      "title": "Contactează‑ne",
+      "address": "Av. Rosa de los Vientos, 4, 03710 Calp, Alicante"
+    },
+    "section3": {
+      "title": "Program de Funcționare",
+      "workingDays": "Lun, Mar, Joi, Vin - 9:30 AM - 11:00 PM",
+      "weekend": "Sâm - Dum - 9:30 AM - 11:00 PM",
+      "dayOff": "Miercuri - Închis"
+    },
+      "rightsReserved": "Cafeneaua Imanis. Toate drepturile rezervate."
+
+  },
     "PageLayout": {
         "links": {
             "docs": {

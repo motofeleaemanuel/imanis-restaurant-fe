@@ -34,7 +34,7 @@ export default function MenuPage({ params }: MenuPageProps) {
   const { locale } = use(params);
 
   const { data, error } = useSWR<{ dishes: MenuItemRaw[]; drinks: MenuItemRaw[] }>(
-    'https://imanis-restaurant-be.onrender.com/api/v1/menu',
+    'https://imanis-restaurant-fe.vercel.app/api/v1/menu',
     fetcher
   );
 
@@ -120,11 +120,10 @@ export default function MenuPage({ params }: MenuPageProps) {
               <button
                 key={val}
                 onClick={() => setTab(val)}
-                className={`relative px-4 py-2 font-semibold ${
-                  tab === val
+                className={`relative px-4 py-2 font-semibold ${tab === val
                     ? 'text-white'
                     : 'text-gray-400 hover:text-white'
-                }`}
+                  }`}
               >
                 {t(`${val.toLowerCase()}Tab`)}
 
@@ -145,54 +144,71 @@ export default function MenuPage({ params }: MenuPageProps) {
           Object.entries(groupedDishes).map(([cat, items]) => (
             <section key={cat} className="mb-16">
               <h2 className="text-3xl font-semibold mb-6">{cat}</h2>
-              {items.map((item, i) => (
-                <div
-                  key={item.id}
-                  className={`flex flex-col md:flex-row items-center mb-12 ${
-                    i % 2 ? 'md:flex-row-reverse' : ''
-                  }`}
-                >
-                  {item.imageURL && (
-                    <div
-                      className={`md:w-1/2 w-full rounded-2xl overflow-hidden shadow-lg ${
-                        i % 2 ? 'md:ml-6' : 'md:mr-6'
+              {items.map((item, i) => {
+                const hasImage = Boolean(item.imageURL);
+                return (
+                  <div
+                    key={item.id}
+                    className={`flex flex-col md:flex-row items-center mb-6 ${i % 2 ? 'md:flex-row-reverse' : ''
                       }`}
-                    >
-                       <Image
-            src={item.imageURL}
-            alt={item.name}
-            width={600}
-            height={400}
-            priority={i === 0 || i === 1} // prioritize first two images
-            loading={i < 2 ? 'eager' : 'lazy'}
-            blurDataURL={placeholderURL(item.imagePublicId || '')}
-            className="w-full h-72 object-cover hover:scale-105 transition"
-          />
-                    </div>
-                  )}
-                  <div className="md:w-1/2 w-full bg-[#333]/70 p-6 rounded-2xl mt-6 md:mt-0">
-                    <div className="flex justify-between items-center mb-4">
-                      <h3 className="text-2xl font-bold text-gray-200">{item.name}</h3>
-                      <span className="text-xl text-primary font-semibold">€{item.price.toFixed(2)}</span>
-                    </div>
-                    {item.description && item.description !== '-' && (
-                      <p className="mb-4 text-gray-300">{item.description}</p>
-                    )}
-                    {item.ingredients.length > 0 && (
-                      <div className="flex flex-wrap gap-2">
-                        {item.ingredients.map((ing, j) => (
-                          <span
-                            key={j}
-                            className="text-xs bg-primary/20 px-2 py-1 rounded text-primary"
-                          >
-                            {ing}
-                          </span>
-                        ))}
+                  >
+                    {hasImage && (
+                      <div
+                        className={`
+              md:w-1/2 w-full
+              max-md:rounded-t-2xl max-md:overflow-hidden max-md:shadow-lg
+              md:rounded-2xl md:overflow-hidden md:shadow-lg
+              ${i % 2 ? 'md:ml-6' : 'md:mr-6'}
+            `}
+                      >
+                        <Image
+                          src={item.imageURL!}
+                          alt={item.name}
+                          width={600}
+                          height={400}
+                          priority={i < 2}
+                          loading={i < 2 ? 'eager' : 'lazy'}
+                          blurDataURL={placeholderURL(item.imagePublicId || '')}
+                          className="w-full h-72 object-cover hover:scale-105 transition"
+                        />
                       </div>
                     )}
+
+                    <div
+                      className={`
+            w-full md:w-1/2 bg-[#333]/70 p-6
+            ${hasImage
+                          ? 'max-md:rounded-b-2xl md:rounded-2xl md:overflow-hidden md:shadow-lg'
+                          : 'rounded-2xl overflow-hidden shadow-lg'
+                        }
+            ${hasImage ? 'lg:mt-0 md:mt-6' : 'mt-0'}
+          `}
+                    >
+                      <div className="flex justify-between items-center mb-4">
+                        <h3 className="text-2xl font-bold text-gray-200">{item.name}</h3>
+                        <span className="text-xl text-primary font-semibold">
+                          €{item.price.toFixed(2)}
+                        </span>
+                      </div>
+                      {item.description && item.description !== '-' && (
+                        <p className="mb-4 text-gray-300">{item.description}</p>
+                      )}
+                      {item.ingredients.length > 0 && (
+                        <div className="flex flex-wrap gap-2">
+                          {item.ingredients.map((ing, j) => (
+                            <span
+                              key={j}
+                              className="text-xs bg-primary/20 px-2 py-1 rounded text-primary"
+                            >
+                              {ing}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </section>
           ))}
 
@@ -204,7 +220,7 @@ export default function MenuPage({ params }: MenuPageProps) {
               {items.map((item) => (
                 <div
                   key={item.id}
-                  className="mb-8 bg-[#333]/70 p-6 rounded-lg flex justify-between items-center"
+                  className="mb-6 bg-[#333]/70 p-6 rounded-lg flex justify-between items-center"
                 >
                   <h3 className="text-2xl font-bold text-gray-200">{item.name}</h3>
                   <span className="text-lg text-primary font-semibold">€{item.price.toFixed(2)}</span>
@@ -221,15 +237,13 @@ export default function MenuPage({ params }: MenuPageProps) {
               {items.map((item, i) => (
                 <div
                   key={item.id}
-                  className={`flex flex-col md:flex-row items-center mb-12 ${
-                    i % 2 ? 'md:flex-row-reverse' : ''
-                  }`}
+                  className={`flex flex-col md:flex-row items-center ${i % 2 ? 'md:flex-row-reverse' : ''
+                    }`}
                 >
                   {item.imageURL && (
                     <div
-                      className={`md:w-1/2 w-full rounded-2xl overflow-hidden shadow-lg ${
-                        i % 2 ? 'ml-6' : 'mr-6'
-                      }`}
+                      className={`md:w-1/2 w-full rounded-2xl overflow-hidden shadow-lg ${i % 2 ? 'ml-6' : 'mr-6'
+                        }`}
                     >
                       <Image
                         src={item.imageURL}
@@ -241,7 +255,7 @@ export default function MenuPage({ params }: MenuPageProps) {
                       />
                     </div>
                   )}
-                  <div className="md:w-1/2 w-full bg-[#333]/70 p-6 rounded-2xl mt-6 md:mt-0">
+                  <div className="md:w-1/2 w-full bg-[#333]/70 p-6 rounded-2xl mb-6">
                     <div className="flex justify-between items-center mb-4">
                       <div>
                         <h3 className="text-2xl font-bold text-gray-200">{item.name}</h3>
@@ -252,8 +266,8 @@ export default function MenuPage({ params }: MenuPageProps) {
                       <span className="text-xl text-primary font-semibold">
                         {item.sizeOptions && item.sizeOptions.length > 0
                           ? item.sizeOptions
-                              .map(o => `€${o.price.toFixed(2)}`)
-                              .join(' / ')
+                            .map(o => `€${o.price.toFixed(2)}`)
+                            .join(' / ')
                           : `€${item.price!.toFixed(2)}`}
                       </span>
                     </div>
