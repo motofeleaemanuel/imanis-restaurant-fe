@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 export default function Hero() {
   const t = useTranslations('HeroSection');
   const [showModal, setShowModal] = useState(false);
-  const phone = "+34 965 04 22 62";
+  const phone = "965 04 22 62";
 
   const copyToClipboard = async () => {
     try {
