@@ -7,6 +7,7 @@ import '../globals.css'
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import SplashScreen from '@/components/SplashScreen';
+import { Analytics } from '@vercel/analytics/next';
 
 const libreBaskerville = Libre_Baskerville({
   variable: '--font-libre-baskerville',
@@ -61,6 +62,7 @@ export default async function LocaleLayout({
           </div>
           {children}
           <Footer />
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>
