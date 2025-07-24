@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { usePathname, useSearchParams, useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import Logo from './Logo';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Navigation() {
   const t = useTranslations('Navigation');
@@ -102,23 +103,52 @@ export default function Navigation() {
       </div>
 
       {/* Mobile Menu Overlay */}
-      {menuOpen && (
-        <nav className="md:hidden bg-[#333]/90 backdrop-blur-md">
-          <ul className="flex flex-col space-y-4 px-4 py-6">
-            {menuItems.map(item => (
-              <li key={item.href.pathname}>
-                <Link
-                  href={item.href}
-                  className="block text-lg font-medium text-white hover:text-primary"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
+      <AnimatePresence>
+        {menuOpen && (
+          <>
+            {/* Overlay for blur and background */}
+            <motion.div
+              className="fixed inset-0 z-40 bg-[#333]/70 backdrop-blur-md md:hidden"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              onClick={() => setMenuOpen(false)}
+            />
+            {/* Mobile menu - now slides from under navbar */}
+            <motion.nav
+              className="absolute left-0 right-0 z-50 md:hidden"
+              style={{ top: '100%' }}
+              initial={{ y: -40, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -40, opacity: 0 }}
+              transition={{ duration: 0.3, ease: 'easeOut' }}
+            >
+              <button
+                type="button"
+                aria-label="Close menu"
+                className="absolute top-2 right-4 text-white text-3xl z-50 focus:outline-none"
+                onClick={() => setMenuOpen(false)}
+              >
+                &times;
+              </button>
+              <ul className="flex flex-col space-y-4 px-4 py-6 bg-[#333]/90 backdrop-blur-md relative">
+                {menuItems.map(item => (
+                  <li key={item.href.pathname}>
+                    <Link
+                      href={item.href}
+                      className="block text-lg font-medium text-white hover:text-primary"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.nav>
+          </>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

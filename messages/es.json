@@ -33,9 +33,9 @@
             "price": "€11.90"
         },
         "popularDish2": {
-            "name": "Ensalada Campestre",
-            "desc": "Rúcula fresca mezclada con rábanos, pepinos, tomates cherry, queso feta y huevos duros.",
-            "price": "€14.50"
+            "name": "Parrillada de carne",
+            "desc": "Varios tipos de carne cocidos en parrilla",
+            "price": "€17.90"
         },
         "popularDish3": {
             "name": "Salmón con verdura a la plancha",

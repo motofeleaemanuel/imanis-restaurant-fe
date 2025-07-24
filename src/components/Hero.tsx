@@ -22,17 +22,28 @@ export default function Hero() {
         src="/images/restaurant.webp"
         alt="Restaurant interior"
         fill
+        priority
         className="object-cover"
       />
       <div className="absolute inset-0 bg-black opacity-30" />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-5xl sm:text-3xl md:3xl font-bold text-white mb-4">
+        <motion.h1
+          className="text-5xl sm:text-3xl md:3xl font-bold text-white mb-4"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        >
           {t('title')}
-        </h1>
-        <p className="text-lg text-white mb-6 max-w-7xl">
+        </motion.h1>
+        <motion.p
+          className="text-lg text-white mb-6 max-w-7xl"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
+        >
           {t('subtitle')}
-        </p>
+        </motion.p>
 
         <button
           onClick={() => setShowModal(true)}

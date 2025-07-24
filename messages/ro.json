@@ -32,9 +32,9 @@
             "price": "€11.90"
         },
         "popularDish2": {
-            "name": "Salată de țară",
-            "desc": "Rucola proaspătă amestecată cu ridichi, castraveți, roșii cherry, brânză feta și ouă fierte.",
-            "price": "€14.50"
+            "name": "Parrillada de carne",
+            "desc": "Varietate de tipuri de carne gătite la grătar",
+            "price": "€17.90"
         },
         "popularDish3": {
             "name": "Somon cu legume la grătar",

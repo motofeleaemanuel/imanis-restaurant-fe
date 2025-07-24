@@ -32,9 +32,9 @@
       "price": "€11.90"
     },
     "popularDish2": {
-      "name": "Country Salad",
-      "desc": "Fresh rucola mixed with radishes, cucumbers, cherry tomatoes, feta cheese and boiled eggs.",
-      "price": "€14.50"
+      "name": "Parrillada de carne",
+      "desc": "Various meats cooked on a grill",
+      "price": "€17.90"
     },
     "popularDish3": {
       "name": "Salmon with Grilled Vegetables",

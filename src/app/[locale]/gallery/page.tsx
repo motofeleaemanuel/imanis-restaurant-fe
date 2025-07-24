@@ -67,7 +67,13 @@ export default function GalleryPage() {
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-12 text-gray-50 mt-8">Gallery</h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -24 }}
+          transition={{ duration: 0.35, ease: 'easeInOut' }}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
           {data.map((item, idx) => (
             <div
               key={item._id}
@@ -87,7 +93,7 @@ export default function GalleryPage() {
               {/* <h3 className="mt-2 text-2xl font-bold text-primary">{item.description}</h3> */}
             </div>
           ))}
-        </div>
+        </motion.div>
 
         {/* Lightbox Carousel */}
         <AnimatePresence>
