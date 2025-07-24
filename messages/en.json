@@ -21,25 +21,30 @@
     "title": "Popular Dishes",
     "description": "Discover our chef’s top picks, crafted with seasonal ingredients and served fresh daily.",
     "menuButton": "See Menu",
-    "popularDish1": {
-      "name": "English Breakfast",
-      "desc": "Fried egg, bread, bacon sausage, cherry tomato and beans",
-      "price": "€10.90"
+   "popularDish1": {
+      "name": "Seafood Paella",
+      "desc": "Traditional Spanish rice dish with fresh seafood and saffron.",
+      "price": "€19.90"
     },
-    "popularDish2": {
+    "popularDish5": {
       "name": "Macaroni Bolognese",
       "desc": "Classic Italian pasta dish with rich meat sauce.",
       "price": "€11.90"
     },
-    "popularDish3": {
+    "popularDish2": {
       "name": "Country Salad",
       "desc": "Fresh rucola mixed with radishes, cucumbers, cherry tomatoes, feta cheese and boiled eggs.",
       "price": "€14.50"
     },
-    "popularDish4": {
+    "popularDish3": {
       "name": "Salmon with Grilled Vegetables",
       "desc": "Grilled salmon served with seasonal vegetables.",
       "price": "€18.90"
+    },
+    "popularDish4": {
+      "name": "English Breakfast",
+      "desc": "Fried egg, bread, bacon sausage, cherry tomato and beans",
+      "price": "€10.90"
     }
   },
   "TestimonialsSection": {

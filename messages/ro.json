@@ -22,24 +22,29 @@
         "description": "Descoperă selecțiile preferate ale bucătarului, preparate cu ingrediente de sezon și servite proaspete în fiecare zi.",
         "menuButton": "Vezi Meniul",
         "popularDish1": {
-            "name": "Mic dejun englezesc",
-            "desc": "Ou prăjit, pâine, cârnați de bacon, roșii cherry și fasole",
-            "price": "€10.90"
+            "name": "Paella cu fructe de mare",
+            "desc": "Preparat tradițional spaniol cu orez, fructe de mare proaspete și șofran.",
+            "price": "€19.90"
         },
-        "popularDish2": {
+        "popularDish5": {
             "name": "Macaroni Bolognese",
             "desc": "Clasicul preparat italian de paste cu sos bogat de carne.",
             "price": "€11.90"
         },
-        "popularDish3": {
+        "popularDish2": {
             "name": "Salată de țară",
             "desc": "Rucola proaspătă amestecată cu ridichi, castraveți, roșii cherry, brânză feta și ouă fierte.",
             "price": "€14.50"
         },
-        "popularDish4": {
+        "popularDish3": {
             "name": "Somon cu legume la grătar",
             "desc": "Somon la grătar servit cu legume.",
             "price": "€18.90"
+        },
+        "popularDish4": {
+            "name": "Mic dejun englezesc",
+            "desc": "Ou prăjit, pâine, cârnați de bacon, roșii cherry și fasole",
+            "price": "€10.90"
         }
     },
     "TestimonialsSection": {

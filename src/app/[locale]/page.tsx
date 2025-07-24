@@ -15,16 +15,16 @@ export default function HomePage() {
   const tGallery = useTranslations('GallerySection');
 
   const popularDishes = [
-    { src: '/images/dish1.webp', alt: 'English Breakfast', name: 'English Breakfast', desc: 'Fried egg, bread, bacon sausage, cherry tomato and beans', price: '€10.90' },
-    { src: '/images/dish2.webp', alt: 'Macaroni Bolognese', name: 'Macaroni Bolognese', desc: 'Classic Italian pasta dish with rich meat sauce.', price: '€11.90' },
+    { src: '/images/dish8.jpeg', alt: 'Seafood Paella', name: 'Seafood Paella', desc: 'Traditional Spanish rice dish with fresh seafood and saffron.', price: '€19.90' },
     { src: '/images/dish3.webp', alt: 'Country salad', name: 'Country salad', desc: 'Fresh rucola mixed with radishes, cucumbers, cherry tomatoes, feta cheese and boiled eggs.', price: '€14.50' },
-    { src: '/images/dish4.webp', alt: 'Salmon with grilled vegetables', name: 'Salmon with grilled vegetables', desc: 'Grilled salmon served with seasonal vegetables.', price: '€18.90' }
+    { src: '/images/dish4.webp', alt: 'Salmon with grilled vegetables', name: 'Salmon with grilled vegetables', desc: 'Grilled salmon served with seasonal vegetables.', price: '€18.90' },
+    { src: '/images/dish1.webp', alt: 'English Breakfast', name: 'English Breakfast', desc: 'Fried egg, bread, bacon sausage, cherry tomato and beans', price: '€10.90' },
   ];
 
   const galleryImages = [
     '/images/restaurant1.webp',
     '/images/restaurant2.webp',
-    '/images/restaurant3.webp',
+    '/images/dish7.jpeg',
     '/images/dish5.webp',
     '/images/restaurant.webp',
     '/images/dish6.webp'

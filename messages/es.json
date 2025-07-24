@@ -23,24 +23,29 @@
         "description": "Descubre las selecciones del chef, elaboradas con ingredientes de temporada y servidas frescas a diario.",
         "menuButton": "Ver menú",
         "popularDish1": {
-            "name": "Desayuno Inglés",
-            "desc": "Huevo frito, pan, salchicha de tocino, tomate cherry y frijoles",
-            "price": "€10.90"
+            "name": "Paella de Mariscos",
+            "desc": "Tradicional arroz español con mariscos frescos y azafrán.",
+            "price": "€19.90"
         },
-        "popularDish2": {
+        "popularDish5": {
             "name": "Macarrones a la Boloñesa",
             "desc": "Clásico plato de pasta italiana con rica salsa de carne.",
             "price": "€11.90"
         },
-        "popularDish3": {
+        "popularDish2": {
             "name": "Ensalada Campestre",
             "desc": "Rúcula fresca mezclada con rábanos, pepinos, tomates cherry, queso feta y huevos duros.",
             "price": "€14.50"
         },
-        "popularDish4": {
+        "popularDish3": {
             "name": "Salmón con verdura a la plancha",
             "desc": "Salmón a la plancha servido con verduras de temporada.",
             "price": "€18.90"
+        },
+        "popularDish4": {
+            "name": "Desayuno Inglés",
+            "desc": "Huevo frito, pan, salchicha de tocino, tomate cherry y frijoles",
+            "price": "€10.90"
         }
     },
      "TestimonialsSection": {
@@ -130,7 +135,7 @@
         "title": "Página no encontrada"
     },
     "MenuPage":{
-        "title": "Nuestra Menú",
+        "title": "Nuestro Menú",
         "dishesTab": "Platos",
         "drinksTab": "Bebidas",
         "dessertsTab": "Postres",

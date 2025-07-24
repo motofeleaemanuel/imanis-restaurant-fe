@@ -4,6 +4,9 @@ import Image from 'next/image';
 import useSWR from 'swr';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Loader2 } from 'lucide-react';
+import { API_BASE_URL } from '@/utils/apiBaseUrl';
+import { useSwipeable } from 'react-swipeable';
+import React from 'react';
 
 // Define the data type returned by the API
 export type GalleryItem = {
@@ -19,10 +22,29 @@ const fetcher = (url: string) => fetch(url).then(res => {
 });
 
 export default function GalleryPage() {
-  const { data, error } = useSWR<GalleryItem[]>('https://imanis-restaurant-be.onrender.com/api/v1/gallery', fetcher, {
+  const { data, error } = useSWR<GalleryItem[]>(`${API_BASE_URL}/api/v1/gallery`, fetcher, {
     revalidateOnFocus: false,
   });
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  // Prevent background scroll when lightbox is open
+  React.useEffect(() => {
+    if (lightboxIndex !== null) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+    return () => {
+      document.body.classList.remove('overflow-hidden');
+    };
+  }, [lightboxIndex]);
+
+  // Swipe handlers for lightbox
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: () => setLightboxIndex(lightboxIndex !== null ? (lightboxIndex + 1) % (data?.length ?? 1) : 0),
+    onSwipedRight: () => setLightboxIndex(lightboxIndex !== null ? (lightboxIndex - 1 + (data?.length ?? 1)) % (data?.length ?? 1) : 0),
+    trackMouse: true,
+  });
 
   if (error) {
     return (
@@ -96,7 +118,10 @@ export default function GalleryPage() {
                 ›
               </button>
 
-              <div className="relative w-full max-w-3xl mx-auto overflow-hidden">
+              {/* Swipeable wrapper for mobile navigation */}
+              <div className="relative w-full max-w-3xl mx-auto overflow-hidden"
+                {...swipeHandlers}
+              >
                 <motion.div
                   className="flex items-center"
                   initial={{ x: -lightboxIndex * 100 + '%' }}
