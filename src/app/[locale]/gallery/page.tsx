@@ -4,7 +4,6 @@ import Image from 'next/image';
 import useSWR from 'swr';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Loader2 } from 'lucide-react';
-import { API_BASE_URL } from '@/utils/apiBaseUrl';
 import { useSwipeable } from 'react-swipeable';
 import React from 'react';
 
@@ -22,7 +21,7 @@ const fetcher = (url: string) => fetch(url).then(res => {
 });
 
 export default function GalleryPage() {
-  const { data, error } = useSWR<GalleryItem[]>(`${API_BASE_URL}/api/v1/gallery`, fetcher, {
+  const { data, error } = useSWR<GalleryItem[]>(`/api/gallery`, fetcher, {
     revalidateOnFocus: false,
   });
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);

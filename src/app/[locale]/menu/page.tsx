@@ -7,7 +7,6 @@ import useSWR from 'swr';
 import { Loader2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { placeholderURL } from '@/utils/cloudinaryImages';
-import { API_BASE_URL } from '@/utils/apiBaseUrl';
 
 interface MenuItemRaw {
   id: string;
@@ -35,7 +34,7 @@ export default function MenuPage({ params }: MenuPageProps) {
   const { locale } = use(params);
 
   const { data, error } = useSWR<{ dishes: MenuItemRaw[]; drinks: MenuItemRaw[] }>(
-    `${API_BASE_URL}/api/v1/menu`,
+    `/api/menu`,
     fetcher
   );
 
