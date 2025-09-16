@@ -108,8 +108,8 @@
     },
     "section3":{
       "title": "Opening Hours",
-      "workingDays": "Mon, Tue, Thur, Fri - 9:30 AM - 23:00 PM",
-      "weekend": "Sat - Sun - 9:30 AM - 23:00 PM",
+      "workingDays": "Mon, Tue, Thur, Fri - 9:30 - 21:00",
+      "weekend": "Sat - Sun - 9:30 - 21:00",
       "dayOff": "Wednesday - Closed"
     },
       "rightsReserved": "Imanis Cafeteria. All rights reserved."

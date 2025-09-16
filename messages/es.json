@@ -109,8 +109,8 @@
     },
     "section3": {
       "title": "Horario de Apertura",
-      "workingDays": "Lun, Mar, Jue, Vie - 9:30 AM - 11:00 PM",
-      "weekend": "Sáb - Dom - 9:30 AM - 11:00 PM",
+      "workingDays": "Lun, Mar, Jue, Vie - 9:30 - 21:00",
+      "weekend": "Sáb - Dom - 9:30 - 21:00",
       "dayOff": "Miércoles - Cerrado"
     },
       "rightsReserved": "Cafetería Imanis. Todos los derechos reservados."
