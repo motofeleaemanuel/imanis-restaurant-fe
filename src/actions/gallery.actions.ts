@@ -6,6 +6,7 @@ export const getGalleryImages = async () => {
     await dbConnect();
     const images = await GalleryImage.find().sort({ createdAt: -1 }).exec();
     return images;
+
   } catch (error) {
     console.error('🛑 getGalleryImages error:', error)
     throw new Error('Error fetching gallery images');
