@@ -17,7 +17,7 @@ export default function HomePage() {
   const popularDishes = [
     { src: '/images/dish8.jpeg', alt: 'Seafood Paella', name: 'Seafood Paella', desc: 'Traditional Spanish rice dish with fresh seafood and saffron.', price: '€19.90' },
     { src: '/images/dish7.jpeg', alt: 'Parrillada de carne', name: 'Parrillada de carne', desc: 'Various meats cooked on a grill', price: '€17.90' },
-    { src: '/images/dish4.webp', alt: 'Salmon with grilled vegetables', name: 'Salmon with grilled vegetables', desc: 'Grilled salmon served with seasonal vegetables.', price: '€18.90' },
+    { src: '/images/dish4.jpeg', alt: 'Salmon with grilled vegetables and white rice', name: 'Salmon with grilled vegetables and white rice', desc: 'Grilled salmon served with seasonal vegetables and white rice.', price: '€18.90' },
     { src: '/images/dish1.webp', alt: 'English Breakfast', name: 'English Breakfast', desc: 'Fried egg, bread, bacon sausage, cherry tomato and beans', price: '€10.90' },
   ];
 
@@ -35,7 +35,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero section with background image */}
-      <Hero/>
+      <Hero />
 
       {/* Main content */}
       <main className="relative z-10">
@@ -57,73 +57,73 @@ export default function HomePage() {
 
               {/* Text Content */}
               <div className="space-y-8">
-                 <h2 className="text-5xl font-bold text-black leading-tight">
-            {tAboutUs('title')}
-          </h2>
-          <p className="text-lg text-gray-600">
-            {tAboutUs('description')}
-          </p>
+                <h2 className="text-5xl font-bold text-black leading-tight">
+                  {tAboutUs('title')}
+                </h2>
+                <p className="text-lg text-gray-600">
+                  {tAboutUs('description')}
+                </p>
               </div>
             </div>
           </section>
         </Revealer>
         <Revealer>
-        <section id="home" className="relative py-16 px-4 overflow-hidden">
- <div className="absolute -bottom-16 -left-16 w-72 h-72 bg-primary/30 rounded-full filter blur-3xl"></div>
+          <section id="home" className="relative py-16 px-4 overflow-hidden">
+            <div className="absolute -bottom-16 -left-16 w-72 h-72 bg-primary/30 rounded-full filter blur-3xl"></div>
             <div className="absolute -top-16 -right-16 w-96 h-96 bg-primary/20 rounded-full filter blur-2xl"></div>
-  <div className="relative z-10 max-w-7xl mx-auto">
-    <h2 className="text-4xl font-bold text-center mb-2 text-gray-50">{tPopularDishes('title')}</h2>
-    <p className="text-center text-gray-100 mb-4">
-      {tPopularDishes('description')}
-    </p>
+            <div className="relative z-10 max-w-7xl mx-auto">
+              <h2 className="text-4xl font-bold text-center mb-2 text-gray-50">{tPopularDishes('title')}</h2>
+              <p className="text-center text-gray-100 mb-4">
+                {tPopularDishes('description')}
+              </p>
 
-    {/* See Menu Link above grid */}
-    <div className="w-full flex justify-end mb-2">
-      <Link
-        href="/menu"
-        className="inline-flex items-center text-primary font-semibold hover:text-primary transition"
-      >
-        {tPopularDishes('menuButton')}
-        <svg
-          className="w-5 h-5 ml-2"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M17 8l4 4m0 0l-4 4m4-4H3"
-          />
-        </svg>
-      </Link>
-    </div>
+              {/* See Menu Link above grid */}
+              <div className="w-full flex justify-end mb-2">
+                <Link
+                  href="/menu"
+                  className="inline-flex items-center text-primary font-semibold hover:text-primary transition"
+                >
+                  {tPopularDishes('menuButton')}
+                  <svg
+                    className="w-5 h-5 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </Link>
+              </div>
 
-    {/* Dishes Grid */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-      {popularDishes.map((dish, index) => (
-        <div
-          key={dish.name}
-          className="bg-[#222]/70 backdrop-blur-sm rounded-xl p-6 text-center shadow-primary hover:shadow-sm transition"
-        >
-          <Image
-            src={dish.src}
-            alt={dish.alt}
-            width={400}
-            height={300}
-            sizes='(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw'
-            loading='lazy'
-            className="w-full h-48 object-cover rounded-lg mb-4"
-          />
-          <h3 className="text-xl font-semibold mb-2 text-gray-50">{tPopularDishes(`popularDish${index + 1}.name`)}</h3>
-          <p className="text-sm text-gray-300 mb-2">{tPopularDishes(`popularDish${index + 1}.desc`)}</p>
-          <span className="text-lg font-bold text-primary">{tPopularDishes(`popularDish${index + 1}.price`)}</span>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
+              {/* Dishes Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                {popularDishes.map((dish, index) => (
+                  <div
+                    key={dish.name}
+                    className="bg-[#222]/70 backdrop-blur-sm rounded-xl p-6 text-center shadow-primary hover:shadow-sm transition"
+                  >
+                    <Image
+                      src={dish.src}
+                      alt={dish.alt}
+                      width={400}
+                      height={300}
+                      sizes='(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw'
+                      loading='lazy'
+                      className="w-full h-48 object-cover rounded-lg mb-4"
+                    />
+                    <h3 className="text-xl font-semibold mb-2 text-gray-50">{tPopularDishes(`popularDish${index + 1}.name`)}</h3>
+                    <p className="text-sm text-gray-300 mb-2">{tPopularDishes(`popularDish${index + 1}.desc`)}</p>
+                    <span className="text-lg font-bold text-primary">{tPopularDishes(`popularDish${index + 1}.price`)}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
         </Revealer>
 
         {/* Testimonials Section */}

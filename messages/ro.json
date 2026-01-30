@@ -1,53 +1,53 @@
 {
-    "HomePage": {
-        "title": "Salut lume!",
-        "about": "Mergi la pagina Despre"
+  "HomePage": {
+    "title": "Salut lume!",
+    "about": "Mergi la pagina Despre"
+  },
+  "HeroSection": {
+    "title": "Bine ai venit la Cafeneaua Imanis",
+    "subtitle": "Bucură-te de cafea proaspăt preparată, produse de patiserie, mâncăruri alese și o atmosferă caldă și primitoare în fiecare zi. Fie că ai poftă de un mic dejun copios, un prânz ușor sau o gustare de după-amiază, meniul nostru este conceput pentru a-ți încânta simțurile.",
+    "callToReserveButton": "Sună pentru a rezerva",
+    "modal": {
+      "title": "Rezervă o masă",
+      "copyButton": "Copiază numărul",
+      "callNowButton": "Sună acum"
+    }
+  },
+  "AboutUsSection": {
+    "title": "Despre noi",
+    "description": "Cafeneaua Imanis este un loc primitor, situat in Calpe, Spania, la doi pași de mare, unde servim cafea delicioasă, produse de patiserie și mese preparate cu dragoste. Echipa noastră este dedicată să îți ofere o experiență caldă și primitoare de fiecare dată când ne vizitezi."
+  },
+  "PopularDishesSection": {
+    "title": "Preparatele noastre populare",
+    "description": "Descoperă selecțiile preferate ale bucătarului, preparate cu ingrediente de sezon și servite proaspete în fiecare zi.",
+    "menuButton": "Vezi Meniul",
+    "popularDish1": {
+      "name": "Paella cu fructe de mare",
+      "desc": "Preparat tradițional spaniol cu orez, fructe de mare proaspete și șofran.",
+      "price": "€19.90"
     },
-    "HeroSection": {
-        "title": "Bine ai venit la Cafeneaua Imanis",
-        "subtitle": "Bucură-te de cafea proaspăt preparată, produse de patiserie, mâncăruri alese și o atmosferă caldă și primitoare în fiecare zi. Fie că ai poftă de un mic dejun copios, un prânz ușor sau o gustare de după-amiază, meniul nostru este conceput pentru a-ți încânta simțurile.",
-        "callToReserveButton": "Sună pentru a rezerva",
-        "modal":{
-            "title": "Rezervă o masă",
-            "copyButton": "Copiază numărul",
-            "callNowButton": "Sună acum"
-        }
+    "popularDish5": {
+      "name": "Macaroni Bolognese",
+      "desc": "Clasicul preparat italian de paste cu sos bogat de carne.",
+      "price": "€11.90"
     },
-    "AboutUsSection": {
-        "title": "Despre noi",
-        "description": "Cafeneaua Imanis este un loc primitor, situat in Calpe, Spania, la doi pași de mare, unde servim cafea delicioasă, produse de patiserie și mese preparate cu dragoste. Echipa noastră este dedicată să îți ofere o experiență caldă și primitoare de fiecare dată când ne vizitezi."
+    "popularDish2": {
+      "name": "Parrillada de carne",
+      "desc": "Varietate de tipuri de carne gătite la grătar",
+      "price": "€18.90"
     },
-    "PopularDishesSection": {
-        "title": "Preparatele noastre populare",
-        "description": "Descoperă selecțiile preferate ale bucătarului, preparate cu ingrediente de sezon și servite proaspete în fiecare zi.",
-        "menuButton": "Vezi Meniul",
-        "popularDish1": {
-            "name": "Paella cu fructe de mare",
-            "desc": "Preparat tradițional spaniol cu orez, fructe de mare proaspete și șofran.",
-            "price": "€19.90"
-        },
-        "popularDish5": {
-            "name": "Macaroni Bolognese",
-            "desc": "Clasicul preparat italian de paste cu sos bogat de carne.",
-            "price": "€11.90"
-        },
-        "popularDish2": {
-            "name": "Parrillada de carne",
-            "desc": "Varietate de tipuri de carne gătite la grătar",
-            "price": "€17.90"
-        },
-        "popularDish3": {
-            "name": "Somon cu legume la grătar",
-            "desc": "Somon la grătar servit cu legume.",
-            "price": "€18.90"
-        },
-        "popularDish4": {
-            "name": "Mic dejun englezesc",
-            "desc": "Ou prăjit, pâine, cârnați de bacon, roșii cherry și fasole",
-            "price": "€10.90"
-        }
+    "popularDish3": {
+      "name": "Somon cu legume la grătar și orez",
+      "desc": "Somon la grătar servit cu legume și orez.",
+      "price": "€19.90"
     },
-    "TestimonialsSection": {
+    "popularDish4": {
+      "name": "Mic dejun englezesc",
+      "desc": "Ou prăjit, pâine, cârnați de bacon, roșii cherry și fasole",
+      "price": "€11.90"
+    }
+  },
+  "TestimonialsSection": {
     "title": "Ce spun oaspeții noștri",
     "description": "Păreri autentice de la cei care iubesc cafeneaua noastră.",
     "testimonial1": {
@@ -91,12 +91,12 @@
       "rating": 5
     }
   },
-    "GallerySection": {
-        "title": "Galerie",
-        "description": "Aruncă o privire asupra spațiului nostru primitor și a preparatelor delicioase.",
-        "viewGalleryButton": "Vezi galeria"
-    },
-    "FooterSection": {
+  "GallerySection": {
+    "title": "Galerie",
+    "description": "Aruncă o privire asupra spațiului nostru primitor și a preparatelor delicioase.",
+    "viewGalleryButton": "Vezi galeria"
+  },
+  "FooterSection": {
     "section1": {
       "title": "Cafeneaua Imanis",
       "description": "Un loc primitor unde servim cafea artizanală, produse de patiserie proaspete și bunătăți de casă. Vino să te relaxezi alături de noi.",
@@ -112,40 +112,43 @@
       "weekend": "Sâm - Dum - 9:30 - 21:00",
       "dayOff": "Miercuri - Închis"
     },
-      "rightsReserved": "Cafeneaua Imanis. Toate drepturile rezervate."
-
+    "rightsReserved": "Cafeneaua Imanis. Toate drepturile rezervate."
   },
-    "PageLayout": {
-        "links": {
-            "docs": {
-                "description": "Află mai multe despre next-intl în documentația oficială.",
-                "href": "https://next-intl.dev",
-                "title": "Documentație"
-            },
-            "source": {
-                "description": "Răsfoiește codul sursă al acestui exemplu pe GitHub.",
-                "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router",
-                "title": "Cod sursă"
-            }
-        }
-    },
-    "NotFoundPage": {
-        "description": "Te rugăm să verifici bara de adrese a browserului sau să folosești navigarea pentru a ajunge la o pagină cunoscută.",
-        "title": "Pagina nu a fost găsită"
-    },
-    "MenuPage": {
-        "title": "Meniul nostru",
-        "dishesTab": "Preparate",
-        "drinksTab": "Băuturi",
-        "dessertsTab": "Deserturi",
-        "description": "Explorează ofertele noastre delicioase"
-    },
-    "Navigation": {
-        "home": "Acasă",
-        "menu": "Meniu",
-        "about": "Despre",
-        "contact": "Contact",
-        "reserve": "Rezervă o masă",
-        "gallery": "Galerie"
+  "PageLayout": {
+    "links": {
+      "docs": {
+        "description": "Află mai multe despre next-intl în documentația oficială.",
+        "href": "https://next-intl.dev",
+        "title": "Documentație"
+      },
+      "source": {
+        "description": "Răsfoiește codul sursă al acestui exemplu pe GitHub.",
+        "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router",
+        "title": "Cod sursă"
+      }
     }
+  },
+  "NotFoundPage": {
+    "description": "Te rugăm să verifici bara de adrese a browserului sau să folosești navigarea pentru a ajunge la o pagină cunoscută.",
+    "title": "Pagina nu a fost găsită"
+  },
+  "MenuPage": {
+    "title": "Meniul nostru",
+    "dishesTab": "Preparate",
+    "drinksTab": "Băuturi",
+    "dessertsTab": "Deserturi",
+    "description": "Explorează ofertele noastre delicioase"
+  },
+  "Navigation": {
+    "home": "Acasă",
+    "menu": "Meniu",
+    "about": "Despre",
+    "contact": "Contact",
+    "reserve": "Rezervă o masă",
+    "gallery": "Galerie"
+  },
+  "SeasonalBanner": {
+    "holidayNotice": "Anunț de Sărbători",
+    "message": "Dragi clienți, Cafeneaua Imanis va fi închisă în perioada 14/11/25 - 01/02/26 pentru VACANȚĂ. SĂRBĂTORI FERICITE!"
+  }
 }
