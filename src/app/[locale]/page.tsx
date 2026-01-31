@@ -15,7 +15,7 @@ export default function HomePage() {
   const tGallery = useTranslations('GallerySection');
 
   const popularDishes = [
-    { src: '/images/dish8.jpeg', alt: 'Seafood Paella', name: 'Seafood Paella', desc: 'Traditional Spanish rice dish with fresh seafood and saffron.', price: '€19.90' },
+    { src: '/images/dish8.jpeg', alt: 'Seafood Paella', name: 'Seafood Paella', desc: 'Traditional Spanish rice dish with fresh seafood and saffron.', price: '€18.90' },
     { src: '/images/dish7.jpeg', alt: 'Parrillada de carne', name: 'Parrillada de carne', desc: 'Various meats cooked on a grill', price: '€17.90' },
     { src: '/images/dish4.jpeg', alt: 'Salmon with grilled vegetables and white rice', name: 'Salmon with grilled vegetables and white rice', desc: 'Grilled salmon served with seasonal vegetables and white rice.', price: '€18.90' },
     { src: '/images/dish1.webp', alt: 'English Breakfast', name: 'English Breakfast', desc: 'Fried egg, bread, bacon sausage, cherry tomato and beans', price: '€10.90' },
