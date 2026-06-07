@@ -108,8 +108,8 @@
     },
     "section3": {
       "title": "Program de Funcționare",
-      "workingDays": "Lun, Mar, Joi, Vin - 9:30 - 21:00",
-      "weekend": "Sâm - Dum - 9:30 - 21:00",
+      "workingDays": "Lun, Mar, Joi, Vin - 9:30 - 23:00",
+      "weekend": "Sâm - Dum - 9:30 - 23:00",
       "dayOff": "Miercuri - Închis"
     },
     "rightsReserved": "Cafeneaua Imanis. Toate drepturile rezervate."
